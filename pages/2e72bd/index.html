@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gin搭建项目-项目初始化 | pengfei&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/myblog/img/favicon.ico">
+    <meta name="description" content="web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,golang,css3,html5,Node,git,github等技术文章。">
+    <meta name="keywords" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#11a8cd">
+    <link rel="preload" href="/myblog/assets/css/0.styles.0de14e93.css" as="style"><link rel="preload" href="/myblog/assets/js/app.56c8d9b2.js" as="script"><link rel="preload" href="/myblog/assets/js/2.d64386e3.js" as="script"><link rel="preload" href="/myblog/assets/js/16.7c73c22b.js" as="script"><link rel="prefetch" href="/myblog/assets/js/10.2bb810f5.js"><link rel="prefetch" href="/myblog/assets/js/11.afffc507.js"><link rel="prefetch" href="/myblog/assets/js/12.748e040e.js"><link rel="prefetch" href="/myblog/assets/js/13.38bdf855.js"><link rel="prefetch" href="/myblog/assets/js/14.a5cb210e.js"><link rel="prefetch" href="/myblog/assets/js/15.205712a7.js"><link rel="prefetch" href="/myblog/assets/js/17.f9ddc802.js"><link rel="prefetch" href="/myblog/assets/js/18.b9b65524.js"><link rel="prefetch" href="/myblog/assets/js/19.53adc3fe.js"><link rel="prefetch" href="/myblog/assets/js/20.444f8846.js"><link rel="prefetch" href="/myblog/assets/js/21.138908cd.js"><link rel="prefetch" href="/myblog/assets/js/22.fd01b098.js"><link rel="prefetch" href="/myblog/assets/js/23.9020e243.js"><link rel="prefetch" href="/myblog/assets/js/24.fd1e8c65.js"><link rel="prefetch" href="/myblog/assets/js/25.3c4608b5.js"><link rel="prefetch" href="/myblog/assets/js/26.56371733.js"><link rel="prefetch" href="/myblog/assets/js/27.8bccad78.js"><link rel="prefetch" href="/myblog/assets/js/28.16bcd2c0.js"><link rel="prefetch" href="/myblog/assets/js/29.1885be6b.js"><link rel="prefetch" href="/myblog/assets/js/3.4591b1ae.js"><link rel="prefetch" href="/myblog/assets/js/30.33213b60.js"><link rel="prefetch" href="/myblog/assets/js/31.7c850172.js"><link rel="prefetch" href="/myblog/assets/js/32.4b5f7a21.js"><link rel="prefetch" href="/myblog/assets/js/33.ccaecf22.js"><link rel="prefetch" href="/myblog/assets/js/34.0a26999b.js"><link rel="prefetch" href="/myblog/assets/js/35.9b590aa1.js"><link rel="prefetch" href="/myblog/assets/js/36.1ca58a7a.js"><link rel="prefetch" href="/myblog/assets/js/37.7d9549b5.js"><link rel="prefetch" href="/myblog/assets/js/38.56104b4e.js"><link rel="prefetch" href="/myblog/assets/js/39.972e2312.js"><link rel="prefetch" href="/myblog/assets/js/4.a0889f8f.js"><link rel="prefetch" href="/myblog/assets/js/40.8020eb62.js"><link rel="prefetch" href="/myblog/assets/js/41.2a7ff141.js"><link rel="prefetch" href="/myblog/assets/js/42.9ad177bf.js"><link rel="prefetch" href="/myblog/assets/js/43.1a560a35.js"><link rel="prefetch" href="/myblog/assets/js/44.6c6f55fd.js"><link rel="prefetch" href="/myblog/assets/js/45.8e1bf47d.js"><link rel="prefetch" href="/myblog/assets/js/46.22b3bb7e.js"><link rel="prefetch" href="/myblog/assets/js/47.9f164d16.js"><link rel="prefetch" href="/myblog/assets/js/48.2a3da599.js"><link rel="prefetch" href="/myblog/assets/js/49.6685bd35.js"><link rel="prefetch" href="/myblog/assets/js/5.c838d8e9.js"><link rel="prefetch" href="/myblog/assets/js/50.68c7fa33.js"><link rel="prefetch" href="/myblog/assets/js/51.c08057b5.js"><link rel="prefetch" href="/myblog/assets/js/52.fed75573.js"><link rel="prefetch" href="/myblog/assets/js/53.97321e4e.js"><link rel="prefetch" href="/myblog/assets/js/54.deafec0f.js"><link rel="prefetch" href="/myblog/assets/js/55.b1b84015.js"><link rel="prefetch" href="/myblog/assets/js/56.a07b72cc.js"><link rel="prefetch" href="/myblog/assets/js/57.79e4b9ac.js"><link rel="prefetch" href="/myblog/assets/js/58.fd5c72a1.js"><link rel="prefetch" href="/myblog/assets/js/59.c255c1f7.js"><link rel="prefetch" href="/myblog/assets/js/6.e6670809.js"><link rel="prefetch" href="/myblog/assets/js/60.71ee860e.js"><link rel="prefetch" href="/myblog/assets/js/61.803d62f9.js"><link rel="prefetch" href="/myblog/assets/js/62.afcda1cd.js"><link rel="prefetch" href="/myblog/assets/js/63.4dd0ac73.js"><link rel="prefetch" href="/myblog/assets/js/64.43d9e659.js"><link rel="prefetch" href="/myblog/assets/js/65.ce848847.js"><link rel="prefetch" href="/myblog/assets/js/66.a13edf3b.js"><link rel="prefetch" href="/myblog/assets/js/67.9bf2308e.js"><link rel="prefetch" href="/myblog/assets/js/68.74e42837.js"><link rel="prefetch" href="/myblog/assets/js/69.8adc0b66.js"><link rel="prefetch" href="/myblog/assets/js/7.b832467e.js"><link rel="prefetch" href="/myblog/assets/js/70.a0f35090.js"><link rel="prefetch" href="/myblog/assets/js/71.5a5e6ffa.js"><link rel="prefetch" href="/myblog/assets/js/72.5603e44c.js"><link rel="prefetch" href="/myblog/assets/js/73.4b70df7d.js"><link rel="prefetch" href="/myblog/assets/js/74.570926ad.js"><link rel="prefetch" href="/myblog/assets/js/75.ba00dade.js"><link rel="prefetch" href="/myblog/assets/js/76.f61788bc.js"><link rel="prefetch" href="/myblog/assets/js/77.a8842869.js"><link rel="prefetch" href="/myblog/assets/js/78.60a2287d.js"><link rel="prefetch" href="/myblog/assets/js/79.1463a07a.js"><link rel="prefetch" href="/myblog/assets/js/8.9c2244a9.js"><link rel="prefetch" href="/myblog/assets/js/80.1f17d433.js"><link rel="prefetch" href="/myblog/assets/js/81.03c61142.js"><link rel="prefetch" href="/myblog/assets/js/82.b49f86f1.js"><link rel="prefetch" href="/myblog/assets/js/83.d23fa78b.js"><link rel="prefetch" href="/myblog/assets/js/84.e674da1c.js"><link rel="prefetch" href="/myblog/assets/js/85.f93fd2c2.js"><link rel="prefetch" href="/myblog/assets/js/86.7173d4c7.js"><link rel="prefetch" href="/myblog/assets/js/87.09fd338e.js"><link rel="prefetch" href="/myblog/assets/js/88.acd07830.js"><link rel="prefetch" href="/myblog/assets/js/89.278e4670.js"><link rel="prefetch" href="/myblog/assets/js/9.2ae38228.js"><link rel="prefetch" href="/myblog/assets/js/90.b9955b2b.js"><link rel="prefetch" href="/myblog/assets/js/91.db2d0173.js"><link rel="prefetch" href="/myblog/assets/js/92.ccbb1d68.js"><link rel="prefetch" href="/myblog/assets/js/93.e84ca08b.js"><link rel="prefetch" href="/myblog/assets/js/94.6d0d8200.js">
+    <link rel="stylesheet" href="/myblog/assets/css/0.styles.0de14e93.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myblog/" class="home-link router-link-active"><img src="/myblog/img/EB-logo.png" alt="pengfei's blog" class="logo"> <span class="site-name can-hide">pengfei's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myblog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/myblog/web/" class="nav-link">前端</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Golang" class="dropdown-title"><a href="/myblog/technology/" class="link-title">Golang</a> <span class="title" style="display:none;">Golang</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/pages/9a7ee40fc232253e/" class="nav-link">技术文档</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="随笔" class="dropdown-title"><a href="/myblog/more/" class="link-title">随笔</a> <span class="title" style="display:none;">随笔</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/pages/9a7ee40fc232253e/" class="nav-link">学习</a></li></ul></div></div><div class="nav-item"><a href="/myblog/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏" class="dropdown-title"><a href="/myblog/pages/beb6c0bd8a66cea6/" class="link-title">收藏</a> <span class="title" style="display:none;">收藏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/pages/beb6c0bd8a66cea6/" class="nav-link">网站</a></li><li class="dropdown-item"><!----> <a href="/myblog/pages/eee83a9211a70f9d/" class="nav-link">资源</a></li><li class="dropdown-item"><!----> <a href="/myblog/pages/12df8ace52d493f6/" class="nav-link">Vue资源</a></li></ul></div></div> <a href="https://github.com/richLpf" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg"> <div class="blogger-info"><h3>Pengfei</h3> <span>
+        中后台全栈
+      </span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/myblog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/myblog/web/" class="nav-link">前端</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Golang" class="dropdown-title"><a href="/myblog/technology/" class="link-title">Golang</a> <span class="title" style="display:none;">Golang</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/pages/9a7ee40fc232253e/" class="nav-link">技术文档</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="随笔" class="dropdown-title"><a href="/myblog/more/" class="link-title">随笔</a> <span class="title" style="display:none;">随笔</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/pages/9a7ee40fc232253e/" class="nav-link">学习</a></li></ul></div></div><div class="nav-item"><a href="/myblog/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏" class="dropdown-title"><a href="/myblog/pages/beb6c0bd8a66cea6/" class="link-title">收藏</a> <span class="title" style="display:none;">收藏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/pages/beb6c0bd8a66cea6/" class="nav-link">网站</a></li><li class="dropdown-item"><!----> <a href="/myblog/pages/eee83a9211a70f9d/" class="nav-link">资源</a></li><li class="dropdown-item"><!----> <a href="/myblog/pages/12df8ace52d493f6/" class="nav-link">Vue资源</a></li></ul></div></div> <a href="https://github.com/richLpf" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>实战项目</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog/pages/2e72bd/" aria-current="page" class="active sidebar-link">Gin搭建项目-项目初始化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myblog/pages/2e72bd/#从零搭建一个go项目" class="sidebar-link">从零搭建一个go项目</a></li><li class="sidebar-sub-header"><a href="/myblog/pages/2e72bd/#实现功能" class="sidebar-link">实现功能</a></li><li class="sidebar-sub-header"><a href="/myblog/pages/2e72bd/#一、新建一个go文件" class="sidebar-link">一、新建一个go文件</a></li><li class="sidebar-sub-header"><a href="/myblog/pages/2e72bd/#二、将请求的函数放在controller中" class="sidebar-link">二、将请求的函数放在controller中</a></li><li class="sidebar-sub-header"><a href="/myblog/pages/2e72bd/#三、将路由分离出来单独维护" class="sidebar-link">三、将路由分离出来单独维护</a></li><li class="sidebar-sub-header"><a href="/myblog/pages/2e72bd/#四、引入中间件和其他工具函数" class="sidebar-link">四、引入中间件和其他工具函数</a></li></ul></li><li><a href="/myblog/pages/9a7ee40fc232253e/" class="sidebar-link">Gin搭建项目-引入数据库</a></li><li><a href="/myblog/pages/cf7d59/" class="sidebar-link">Gin搭建项目-单元测试</a></li><li><a href="/myblog/pages/d32de82222/" class="sidebar-link">Gin搭建项目-打印日志</a></li><li><a href="/myblog/pages/d32de8/" class="sidebar-link">Gin搭建项目-自动化构建</a></li><li><a href="/myblog/pages/t0006/" class="sidebar-link">Gin搭建项目-企业微信开发</a></li></ul></section></li></ul> </aside> <div><main class="page"> <div class="theme-vdoing-wrapper"><div class="articleInfo-wrap" data-v-23da8cbc><div class="articleInfo" data-v-23da8cbc><ul class="breadcrumbs" data-v-23da8cbc><li data-v-23da8cbc><a href="/myblog/" title="首页" class="iconfont icon-home router-link-active" data-v-23da8cbc></a></li> <li data-v-23da8cbc><a href="/myblog/technology" title="技术-目录页" data-v-23da8cbc>技术</a></li> <li data-v-23da8cbc><a href="/myblog/technology/#实战项目" title="技术#实战项目" data-v-23da8cbc>实战项目</a></li></ul> <div class="info" data-v-23da8cbc><div title="作者" class="author iconfont icon-touxiang" data-v-23da8cbc><a href="https://pengfeilv.gitee.io/myblog/" target="_blank" title="作者" class="beLink" data-v-23da8cbc>鹏飞</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-23da8cbc><a href="javascript:;" data-v-23da8cbc>2020-05-02</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">
+          Gin搭建项目-项目初始化
+        </h1> <div class="theme-vdoing-content content__default"><p>使用gin框架启动一个项目事很简单的，不过在开发过程中，如果仅仅使用一个go文件，必然不利于项目的扩展，这里根据个人项目开发需要，不断的对项目进行优化，记录自己从Gin框架搭建实战项目的过程，最后产生一个go-cli,便于下次使用。</p> <h2 id="从零搭建一个go项目"><a href="#从零搭建一个go项目" class="header-anchor">#</a> 从零搭建一个go项目</h2> <p>涉及到的技术</p> <p>gin  mysql  gorm  swagger  docker shell</p> <h2 id="实现功能"><a href="#实现功能" class="header-anchor">#</a> 实现功能</h2> <p>1、通过环境变量配置不同的打包环境</p> <p>2、打包镜像实现自动化打包，版本的记录和回退</p> <p>3、通过组织代码，将代码的分层</p> <p>4、引入mod包管理工具</p> <p>5、通过swagger自动生成文档</p> <h2 id="一、新建一个go文件"><a href="#一、新建一个go文件" class="header-anchor">#</a> 一、新建一个go文件</h2> <p>新建文件夹
+<code>mkdir myapp</code></p> <p>使用mod版本管理
+<code>go mod init myapp</code> 自动生成go.mod文件</p> <p><em>注意</em> golang 安装后默认环境变量 GO111MODULE=auto, 如果需要使用mod管理包，需要设置<code>GO111MODULE=on</code></p> <p><code>go get github.com/gin-gonic/gin</code> 下载gin包，mod会自动记录</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package main
+
+import (
+	&quot;net/http&quot;
+
+	&quot;github.com/gin-gonic/gin&quot;
+)
+
+func main() {
+	router := gin.Default()
+	router.GET(&quot;/list&quot;, GetUserList)
+	router.GET(&quot;/detail/:id&quot;, GetDetail)
+	router.Run(&quot;:9001&quot;)
+}
+
+//GetUserList get user
+func GetUserList(c *gin.Context) {
+	c.JSON(http.StatusOK, gin.H{&quot;RetCode&quot;: 0, &quot;Msg&quot;: &quot;success&quot;})
+}
+
+//GetDetail update user
+func GetDetail(c *gin.Context) {
+	id := c.Param(&quot;id&quot;)
+	c.JSON(http.StatusOK, gin.H{&quot;RetCode&quot;: 0, &quot;Msg&quot;: &quot;success&quot;, &quot;Id&quot;: id})
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p>一个main包，此时我们还没有引入数据库和其他的一些配置，但实际工作中，我们不可能用一个包来写所有的代码,所以接下来我们用controller目录来将请求的接口整理</p> <h2 id="二、将请求的函数放在controller中"><a href="#二、将请求的函数放在controller中" class="header-anchor">#</a> 二、将请求的函数放在controller中</h2> <p>新建<code>controller/user/user.go</code></p> <p><code>cat user.go</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package user
+
+import (
+	&quot;net/http&quot;
+
+	&quot;github.com/gin-gonic/gin&quot;
+)
+
+//GetUserList get user
+func GetUserList(c *gin.Context) {
+	c.JSON(http.StatusOK, gin.H{&quot;RetCode&quot;: 0, &quot;Msg&quot;: &quot;success&quot;})
+}
+
+//GetDetail update user
+func GetDetail(c *gin.Context) {
+	id := c.Param(&quot;id&quot;)
+	c.JSON(http.StatusOK, gin.H{&quot;RetCode&quot;: 0, &quot;Msg&quot;: &quot;success&quot;, &quot;Id&quot;: id})
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>此时<code>cat main.go</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package main
+
+import (
+	&quot;myapp/controller/user&quot;
+
+	&quot;github.com/gin-gonic/gin&quot;
+)
+
+func main() {
+	router := gin.Default()
+	router.GET(&quot;/list&quot;, user.GetUserList)
+	router.GET(&quot;/detail/:id&quot;, user.GetDetail)
+	router.Run(&quot;:9001&quot;)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>通过引入user包，将user中的方法引入</p> <p>当前目录结构</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>├─controller              控制器
+│   |--user               用户相关接口
+|     |--user.go
+|—go.mod                  mod管理器
+|—go.sum                  自动生成记录包的版本
+|—main.go                 main包，入口文件
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>之后新增的业务接口，统一放在controller中</p> <h2 id="三、将路由分离出来单独维护"><a href="#三、将路由分离出来单独维护" class="header-anchor">#</a> 三、将路由分离出来单独维护</h2> <p>新建 <code>router/router.go</code></p> <p><code>cat router.go</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package router
+
+import (
+	&quot;myapp/controller/passage&quot;
+	&quot;myapp/controller/user&quot;
+
+	&quot;github.com/gin-gonic/gin&quot;
+)
+
+//Router 路由
+func Router() *gin.Engine {
+	router := gin.New()
+	// 使用中间件
+	// 使用Logger中间件
+	router.Use(gin.Logger())
+	// 使用Recovery中间件
+	router.Use(gin.Recovery())
+
+	userRouter := router.Group(&quot;/user&quot;)
+	userRouter.GET(&quot;list&quot;, user.GetUserList)
+	userRouter.GET(&quot;detail/:id&quot;, user.GetDetail)
+
+	passageRouter := router.Group(&quot;/passage&quot;)
+	passageRouter.GET(&quot;list&quot;, passage.GetPassageList)
+	passageRouter.POST(&quot;add&quot;, passage.AddPassage)
+
+	return router
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p>这里除了将路由独立出来，还增加了中间件和路由分组</p> <p>此时<code>cat main.go</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package main
+
+import &quot;myapp/router&quot;
+
+func main() {
+	apiRouter := router.Router()
+	apiRouter.Run(&quot;:9000&quot;)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>我们看到main.go文件的内容是不是少多了，仅仅引入router包，启动路由</p> <p>router.Group 会将路由分成组，访问路由为 <code>/user/list</code> <code>user/detail/:id</code></p> <p><em>注意</em> gin.New() 和gin.Default() 的区别</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>gin.New() 仅仅创建一个路由，并不会包含Logger()和gin.Recovery()中间件，
+gin.Default()  创建的路由会默认添加 Logger() 和Recovery() 中间件
+所以如果你需要自己引入日志中间件或者恢复的中间件，可以使用gin.New()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>此时目录结构为</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>├─controller              控制器
+│   |--user               用户相关接口
+|     |--user.go
+|   |--passage            文章相关接口
+|     |--passage.go
+|--router                 路由文件
+|   |--router.go  
+|—go.mod                  mod管理器
+|—go.sum                  自动生成记录包的版本
+|—main.go                 main包，入口文件
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="四、引入中间件和其他工具函数"><a href="#四、引入中间件和其他工具函数" class="header-anchor">#</a> 四、引入中间件和其他工具函数</h2> <p>新建<code>middleware/cors.go</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package middleware
+
+import (
+	&quot;net/http&quot;
+
+	&quot;github.com/gin-gonic/gin&quot;
+)
+
+//Cors 跨域中间件
+func Cors() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		method := c.Request.Method
+		c.Header(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;)
+		c.Header(&quot;Access-Control-Allow-Headers&quot;, &quot;Origin, Authorization, Content-Type,remote_user,X-Requested-With,*&quot;)
+		c.Header(&quot;Access-Control-Allow-Headers&quot;, &quot;Content-Type, remote_user&quot;)
+		c.Header(&quot;Access-Control-Allow-Methods&quot;, &quot;POST,OPTIONS, GET,PUT&quot;)
+		c.Header(&quot;Access-Control-Expose-Headers&quot;, &quot;Accept , Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Content-Type&quot;)
+		c.Header(&quot;Access-Control-Allow-Credentials&quot;, &quot;True&quot;)
+		c.Header(&quot;Content-Type&quot;, &quot;application/json; charset=utf-8&quot;)
+		if method == &quot;OPTIONS&quot; {
+			c.AbortWithStatus(204)
+			c.AbortWithStatus(http.StatusNoContent)
+		}
+		submitUser := c.Request.Header.Get(&quot;remote_user&quot;)
+		c.Set(&quot;submitUser&quot;, submitUser)
+		c.Next()
+	}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p>在<code>cat router.go</code> Router() 中新增 <code>router.Use(middleware.Cors())</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//Router 路由
+func Router() *gin.Engine {
+	router := gin.New()
+	// 使用中间件
+	// 使用Logger中间件
+	router.Use(gin.Logger())
+	// 使用Recovery中间件
+	router.Use(gin.Recovery())
+
+	router.Use(middleware.Cors())  // 将会对所有的路由生效
+
+	userRouter := router.Group(&quot;/user&quot;)
+	userRouter.GET(&quot;list&quot;, user.GetUserList)
+	userRouter.GET(&quot;detail/:id&quot;, user.GetDetail)
+
+	passageRouter := router.Group(&quot;/passage&quot;)
+	passageRouter.GET(&quot;list&quot;, passage.GetPassageList)
+	passageRouter.POST(&quot;add&quot;, passage.AddPassage)
+
+	return router
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>当前目录结构</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>├─controller              控制器
+│   |--user               用户相关接口
+|     |--user.go
+|   |--passage            文章相关接口
+|     |--passage.go
+|--router                 路由文件
+|   |--router.go  
+|--middleware             中间件
+|   |--cors.go          
+|--common                 公用的函数
+|   |--utils.go
+|—go.mod                  mod管理器
+|—go.sum                  自动生成记录包的版本
+|—main.go                 main包，入口文件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></div></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/richLpf/edit/master/docs/03.技术/01.实战项目/01.Gin搭建项目-项目初始化.md" target="_blank" rel="noopener noreferrer">编辑</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----> <!----></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><!----> <a href="/myblog/pages/9a7ee40fc232253e/" data-tooltip="Gin搭建项目-引入数据库" class="page-nav-centre page-nav-centre-next"></a> <div class="tooltip" style="display:none;">提高学习效率的策略</div></div> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/myblog/pages/9a7ee40fc232253e/">Gin搭建项目-引入数据库</a>
+        →
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/myblog/archives/" class="iconfont icon-shizhong">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/myblog/pages/t0006/"><div>Gin搭建项目-自动化构建</div></a> <span>05-31</span></dt></dl><dl><dd>02</dd> <dt><a href="/myblog/pages/d32de8/"><div>Gin搭建项目-自动化构建</div></a> <span>05-31</span></dt></dl><dl><dd>03</dd> <dt><a href="/myblog/pages/d32de82222/"><div>Gin搭建项目-打印日志</div></a> <span>05-17</span></dt></dl> <dl><dd></dd> <dt><a href="/myblog/archives/" class="more">更多文章&gt;</a></dt></dl></div></div> </main></div> <div class="footer"><div class="icons"><a href="mailto:1045465391@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/richLpf" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+     | Copyright © 2020-2020
+    <span>Pengfei | MIT License</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----></div><div class="global-ui"><div></div></div></div>
+    <script src="/myblog/assets/js/app.56c8d9b2.js" defer></script><script src="/myblog/assets/js/2.d64386e3.js" defer></script><script src="/myblog/assets/js/16.7c73c22b.js" defer></script>
+  </body>
+</html>
